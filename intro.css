@@ -59,6 +59,10 @@ a {
   font-weight: bold;
   font-size: 2em;
   line-height: 40px;
+  cursor: pointer;
+}
+.go-btn label{
+  cursor: pointer;
 }
 
 .intro-header {

@@ -64,3 +64,10 @@ function updateBackground() {
 
 // 🔹 API 호출 실행
 fetchParkImages();
+
+
+
+document.getElementById('findAnswerBtn').addEventListener('click', function() {
+  window.location.href = 'temp-search-page.html'; // 원하는 URL로 변경
+});
+

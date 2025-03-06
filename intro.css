@@ -8,15 +8,16 @@ body {
   font-weight: 300;
   margin: 0;
   font-size: 12px;
+  background-color: #27472A;
 }
-
 a {
   color: #222;
   text-decoration: none;
   font-size: 12px;
 }
 
-.tabs {
+.sentence-and-btn{
+  /* border: 1px solid #000; */
   position: relative;
   height: 100vh;
   display: flex;
@@ -26,7 +27,7 @@ a {
   overflow: hidden;
 }
 
-.items {
+.sentence-part {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,17 +36,28 @@ a {
   height: 70%;
   width: 100%;
   position: relative;
+  /* border: 3px solid blue; */
 }
 
-.items h1 {
+.sentence-part h1 {
   font-size: 4.5em;
-  font-weight: normal;
+  font-weight: bold;
   color: white;
   margin: 0;
   /* transform: translateY(-50%); */
 }
+.btn-part{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10em;
+  position: relative;
+  /* border: 3px solid red; */
+  /* position: relative; */
+}
 
 .go-btn {
+  /* border: 3px solid purple; */
   position: absolute;
   bottom: 20%;
   left: 50%;
@@ -73,6 +85,26 @@ a {
   height: 80px;
   /* background-color: #27472a; */
   z-index: 10;
+  /* border: 1px solid #000; */
+}
+
+.intro-header a {
+  /* border: 1px solid #000; */
+  padding-top: 10px;
+}
+
+.intro-header a span {
+  /* border: 1px solid #000; */
+  margin-left: 8px;
+  font-weight: bold; 
+  font-size: 20px; 
+  color: green;
+  font-size:1.5em;
+}
+
+.intro-header a img {
+  transform: translateX(30%);
+  /* transform: translateY(15%); */
 }
 
 .intro-logo {
@@ -91,12 +123,11 @@ a {
 
 /* 폰 버전에서 크기 조정 */
 @media screen and (max-width: 768px) {
-  .items h1 {
-    font-size: 2.5em; /* h1 글자 크기 줄이기 */
+  .sentence-part h1 {
+    font-size: 6vw;
   }
-
   .go-btn {
-    font-size: 1.5em; /* 버튼 텍스트 크기 줄이기 */
-    padding: 1em 30px; /* 버튼 크기 줄이기 */
+    font-size: 4vw; 
+    padding: 1em 30px; 
   }
 }
